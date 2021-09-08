@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body {
+  color: rgb(180, 177, 5);
+  background-color: black;
+  font-family: 'Montserrat', 'Arial', 'sans-serif';
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+  /* ------ Form ------- */
+
+.formContainer {
+  max-width: 500px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contact {
+  display: grid;
+  grid-template-columns: 150px 150px;
+  grid-template-rows: 1fr 1fr 200px;
+  column-gap: 10px;
+  row-gap: 15px;
+}
+
+.formNameTitle {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.formEmailTitle {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.formMessageTitle {
+  font-size: 15px;
 }
+
+.formNewsletterTitle {
+  font-size: 15px;
+}
+
+  .textarea {
+    height: 200px;
+    resize: none;
+    background: transparent;
+    color: rgb(180, 177, 5);
+  }
