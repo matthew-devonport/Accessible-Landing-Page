@@ -4,74 +4,116 @@
 
 html,
 body {
-  color: rgb(180, 177, 5);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699)), url(Images/2.jpeg);
-  background-color: black;   
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(Images/2.jpeg);
+  background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
   overflow-y: hidden;
   height: 100%;
   background-attachment: fixed;
-  font-family: 'Montserrat', 'Arial', 'sans-serif';
+  font-family: "Montserrat", "Arial", "sans-serif";
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
 }
 
 
+/* ---- Gradient --- */
+
+.gradient:hover,
+.gradient:active {
+  color: whitesmoke;
+  background-image: -webkit-linear-gradient(92deg,  #1c5479, #26f352 );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hue 10s infinite linear;
+  transition: all 200ms ease-in-outR;
+  -webkit-transition: all 200ms ease-in-outR;
+  -moz-transition: all 200ms ease-in-outR;
+  -ms-transition: all 200ms ease-in-outR;
+  -o-transition: all 200ms ease-in-outR;
+}
+
+@keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
 .appHeader {
   text-align: center;
   margin-top: 80px;
-  margin-bottom: 100px;
 }
 
-  /* ------ Form ------- */
-
-  .formContainer label {
-    filter: brightness(200%);
-    -webkit-filter: brightness(200%);
+.nav {
+  display: flex;
+  font-size: 40px;
+  font-weight: 400;
+  justify-content: space-evenly;
 }
 
-  .formContainer {
-    display: grid;
-    grid-template-columns: 100px 200px;
-    grid-template-rows: 1fr 1fr;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.800),rgba(0, 0, 0, 0.800)), url(Images/1.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: initial;
-    padding: 25px;
-    margin: 150px 0;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.664), 0 5px 5px rgba(0, 0, 0, 0.664);
-    max-width: 40%;
-    margin: 0 auto;
-    position: relative;
-    padding-top: 30px;
-    margin-bottom: 60px;
-    opacity: 0.85;
-    max-width: 500px;
-  }
+.navLink {
+  text-decoration: none;
+  text-shadow: black;
+  margin-bottom: 150px;
+  filter: brightness(200%);
+  -webkit-filter: brightness(200%);
+  color: inherit;
+}
 
+/* ------ Form ------- */
 
+.contact {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
 
-  .formTitles {
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    opacity: 1;
-    text-align: center;
-    margin-right: 10px;
-  }
+.formContainer label {
+  filter: brightness(200%);
+  -webkit-filter: brightness(200%);
+}
 
-  input {
-    width: 220px;
-    margin-top: 10px;
-    margin-left: 10px;
-    color: rgb(180, 177, 5);
-    background-color: black;
-  }
+.formContainer {
+  display: grid;
+  grid-template-columns: 100px 200px;
+  grid-template-rows: 1fr 1fr;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(Images/1.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: initial;
+  max-width: 500px;
+  padding: 25px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.664), 0 5px 5px rgba(0, 0, 0, 0.664);
+  margin: 0 auto;
+  position: relative;
+  padding-top: 30px;
+  opacity: 0.85;
+}
+
+.formTitles {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  opacity: 1;
+  text-align: center;
+  margin-right: 10px;
+}
+
+input {
+  width: 220px;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: rgb(180, 177, 5);
+  background-color: black;
+}
 
 textarea {
   resize: none;
@@ -89,8 +131,8 @@ textarea {
   width: 300px;
 }
 
-#submit-btn  {
-  font-family: 'Montserrat', 'Arial', 'sans-serif';
+#submit-btn {
+  font-family: "Montserrat", "Arial", "sans-serif";
   font-weight: 600;
   border-radius: 10px;
   border: 0.5px solid black;
@@ -98,7 +140,7 @@ textarea {
   width: 120px;
   background-color: #f0a434;
   color: black;
-  height:40px;
+  height: 40px;
   border: none;
   margin: 0 0 5px;
   margin-top: 20px;
@@ -112,14 +154,37 @@ textarea {
   box-shadow: 0 5px 15px #f0a434;
 }
 
-.green {
-  color: #56bb9d;
+.red {
+  color: #f81d37;
 }
 
 .blue {
- color: #438eb5;
+  color: #438eb5;
 }
 
 .purple {
   color: #f8397f;
+}
+
+.purpleDeeper {
+  color: #f839f8
+}
+
+.green {
+  color: #388a42;
+}
+
+.left {
+  margin-left: 250px;
+}
+
+.right {
+  margin-right: 250px;
+}
+
+.footer {
+  font-size: 10px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 40px;
 }

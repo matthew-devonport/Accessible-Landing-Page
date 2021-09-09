@@ -1,18 +1,21 @@
-import React from 'react'
+import React from "react";
 
 function Nav() {
-
   return (
     <>
-<Nav>
-    <div className="navContainer">
-<a className="gallery">GALLERY</a>
-<a className="gallery">GALLERY</a>
-<a className="gallery">GALLERY</a>
-</div>
-</Nav>
+      <nav className="nav">
+        <a className="gradient navLink blue left" id="gradient" href="/">
+          GALLERY
+        </a>
+        <a className="gradient navLink purple" href="/">
+          SHOP
+        </a>
+        <a className="gradient navLink red right" href="/">
+          TEAM
+        </a>
+      </nav>
     </>
-  )
+  );
 }
 
-export default Nav
+export default Nav;
