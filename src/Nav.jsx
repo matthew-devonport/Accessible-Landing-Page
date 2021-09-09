@@ -4,7 +4,7 @@ function Nav() {
   return (
     <>
       <nav className="nav">
-        <a className="gradient navLink blue left" id="gradient" href="/">
+        <a className="gradient navLink blue left" href="/">
           GALLERY
         </a>
         <a className="gradient navLink purple" href="/">

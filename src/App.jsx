@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <header className="appHeader">
-        <img src="logo.png"></img>
+        <img src="logo.png" alt="Main Logo"></img>
       </header>
       <Nav />
       <Form />
