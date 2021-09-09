@@ -4,7 +4,7 @@
 
 html,
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.600), rgba(0, 0, 0, 0.600)),
     url(Images/2.jpeg);
   background-color: black;
   background-size: cover;
