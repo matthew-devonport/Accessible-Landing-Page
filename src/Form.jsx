@@ -4,21 +4,26 @@ function Form() {
 
   return (
     <>
-      <form className="formContainer">
-          <div className='contact'>
-            <h2 className="formNameTitle">YOUR FULL NAME</h2>
-            <input
-              required />
-            <h2 className="formEmailTitle">EMAIL ADDRESS</h2>
-            <input
-              required />
-              <h2 className="formMessageTitle">MESSAGE</h2>
-              <textarea
-                className="textarea"
-                name='message'
-                required />
+        <form>
+          <div className="formContainer" id="formScale">
+            <label for="name" className="formTitles green">NAME</label>
+             <input
+              name="name"
+            required/> 
+            <label for="name" className="formTitles blue">EMAIL</label>
+             <input
+            name="email"
+            required/>     
+            <label for="message" className="formTitles purple">MESSAGE</label>
+             <textarea
+            name="message"
+            required/>
+         <div >
           </div>
-          <input />
+          <div className="buttonWrapper">
+          <button id='submit-btn'>SUBMIT</button>
+          </div> 
+          </div>
         </form>
     </>
   )

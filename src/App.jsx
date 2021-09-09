@@ -7,8 +7,8 @@ import './App.css';
 function App() {
   return (
     <>
-      <header className="App-header">
-        <h1>Heaps of Stuff </h1>
+      <header className="appHeader">
+        <img src='logo.png'></img>
       </header>
       <Form />
     </>

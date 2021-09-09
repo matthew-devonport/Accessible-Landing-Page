@@ -5,7 +5,14 @@
 html,
 body {
   color: rgb(180, 177, 5);
-  background-color: black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699)), url(Images/2.jpeg);
+  background-color: black;   
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  overflow-y: hidden;
+  height: 100%;
+  background-attachment: fixed;
   font-family: 'Montserrat', 'Arial', 'sans-serif';
   font-weight: 300;
   font-size: 20px;
@@ -13,43 +20,106 @@ body {
 }
 
 
+.appHeader {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
   /* ------ Form ------- */
 
-.formContainer {
-  max-width: 500px;
+  .formContainer label {
+    filter: brightness(200%);
+    -webkit-filter: brightness(200%);
 }
 
-.contact {
-  display: grid;
-  grid-template-columns: 150px 150px;
-  grid-template-rows: 1fr 1fr 200px;
-  column-gap: 10px;
-  row-gap: 15px;
-}
-
-.formNameTitle {
-  display: flex;
-  align-items: center;
-  font-size: 15px;
-}
-
-.formEmailTitle {
-  display: flex;
-  align-items: center;
-  font-size: 15px;
-}
-
-.formMessageTitle {
-  font-size: 15px;
-}
-
-.formNewsletterTitle {
-  font-size: 15px;
-}
-
-  .textarea {
-    height: 200px;
-    resize: none;
-    background: transparent;
-    color: rgb(180, 177, 5);
+  .formContainer {
+    display: grid;
+    grid-template-columns: 100px 200px;
+    grid-template-rows: 1fr 1fr;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.800),rgba(0, 0, 0, 0.800)), url(Images/1.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: initial;
+    padding: 25px;
+    margin: 150px 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.664), 0 5px 5px rgba(0, 0, 0, 0.664);
+    max-width: 40%;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 30px;
+    margin-bottom: 60px;
+    opacity: 0.85;
+    max-width: 500px;
   }
+
+
+
+  .formTitles {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    opacity: 1;
+    text-align: center;
+    margin-right: 10px;
+  }
+
+  input {
+    width: 220px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: rgb(180, 177, 5);
+    background-color: black;
+  }
+
+textarea {
+  resize: none;
+  height: 120px;
+  width: 300px;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: rgb(180, 177, 5);
+  background-color: black;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+}
+
+#submit-btn  {
+  font-family: 'Montserrat', 'Arial', 'sans-serif';
+  font-weight: 600;
+  border-radius: 10px;
+  border: 0.5px solid black;
+  cursor: pointer;
+  width: 120px;
+  background-color: #f0a434;
+  color: black;
+  height:40px;
+  border: none;
+  margin: 0 0 5px;
+  margin-top: 20px;
+  font-size: 20px;
+  transition: box-shadow 0.3s, background-color 0.3s;
+  -webkit-border-radius: 10px;
+}
+
+#submit-btn:hover {
+  background-color: #f0a434;
+  box-shadow: 0 5px 15px #f0a434;
+}
+
+.green {
+  color: #56bb9d;
+}
+
+.blue {
+ color: #438eb5;
+}
+
+.purple {
+  color: #f8397f;
+}
