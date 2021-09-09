@@ -1,5 +1,7 @@
 # Skrate Boardz
 
+A landing page for a skateboard brand.
+
 
 ## Available Scripts
 
