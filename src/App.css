@@ -140,7 +140,7 @@ textarea {
   border: 0.5px solid black;
   cursor: pointer;
   width: 120px;
-  background-color: #f0a434;
+  background-color: #f06095;;
   color: black;
   height: 40px;
   border: none;
@@ -152,8 +152,8 @@ textarea {
 }
 
 #submit-btn:hover {
-  background-color: #f0a434;
-  box-shadow: 0 5px 15px #f0a434;
+  background-color: #f8397f;;
+  box-shadow: 0 5px 15px #f8397f;;
 }
 
 .red {
